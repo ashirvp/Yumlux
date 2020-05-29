@@ -1,5 +1,5 @@
 <?php
-		  if(isset($_POST['SEND'])){
+		
 		    $to = "sonusvareed@gmail.com";
 		    $from = $_REQUEST['email'];
 		    $name = $_REQUEST['name'];
@@ -39,5 +39,6 @@
 
 		    mail($to, $subject, $body, $headers);
 		    header("Location : index.php?mailsend");
-		  }
+	
 
+?>
