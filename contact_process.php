@@ -1,5 +1,5 @@
 <?php
-		  if(isset($_REQUEST['SEND'])){
+		  if(isset($_POST['SEND'])){
 		    $to = "sonusvareed@gmail.com";
 		    $from = $_REQUEST['email'];
 		    $name = $_REQUEST['name'];
