@@ -1371,7 +1371,7 @@ h3 {
 
 /* line 3, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
 .about_area .about_image img {
-  width: 100%;
+  width: 96%;
 }
 
 /* line 7, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
@@ -1658,6 +1658,10 @@ h3 {
   background: #28AE60;
   padding: 150px 0;
 }
+.project_area1 {
+  background: #202120;
+  padding: 150px 0;
+}
 
 @media (max-width: 767px) {
   /* line 203, ../../Arafath/CL/CL October/213. Business/HTML/scss/_about.scss */
@@ -1678,6 +1682,12 @@ h3 {
   color: #fff;
   font-size: 36px;
   font-weight: 400;
+  line-height: 55px;
+}
+.project_area1 .project_info h3 {
+  color: #fff;
+  font-size: 39px;
+  font-weight: 500;
   line-height: 55px;
 }
 
@@ -2912,6 +2922,9 @@ h3 {
 
 /* line 4, ../../Arafath/CL/CL October/213. Business/HTML/scss/_bradcam.scss */
 .breadcam_bg_2 {
+  background-image: url(../img/banner/about_bg.png);
+}
+.breadcam_bg_team {
   background-image: url(../img/banner/about_bg.png);
 }
 
