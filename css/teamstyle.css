@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+.breadcam_bg_team {
+    background-image: url(../img/banner/about_bg.png);
+  }
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+    min-height: 1px;
+    
+}
+.team{
+    min-width: 100vh;
+    padding: 60px 15px;
+    background-color: #22252a;
+    float: left;
+    width: 100%;
+}
+.team h1{
+    font-size: 36px;
+    font-family: open sans;
+    font-weight: 700;
+    color: #ffff;
+    margin: 0px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.team .card{
+    width: 25%;
+    float: left;
+    padding: 0px 10px;
+}
+.card{
+    background:  #22252a;
+}
+.team .card .box{
+    padding: 15px;
+    background:#2d3035 ;
+    border-radius: 5px;
+    transition: margin 1s ease,box-shadow 1s ease;
+}
+.team .card .box:hover{
+    margin-top: 15px;
+    box-shadow: 0px 0px 40px black;
+}
+.team .card .box img{
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.team .card .box h4{
+    font-size: 20px;
+    font-family: open sans;
+    color: #ea5e71;
+    margin: 15px 0px 10px;
+    text-align: center;
+}
+.team .card .box h5{
+    font-size: 16px;
+    font-family: open sans;
+    font-weight: 600;
+    color: #666666;
+    margin: 0px 0px 15px;
+    text-align: center;
+}
+/*responsive */
+@media(max-width:991px){
+    .team .card{
+        width: 50%;
+        margin-bottom:30px ;
+    }
+}
+@media(max-width:550px){
+    .team .card{
+        width: 50%;
+        margin-bottom:30px ;
+    }
+}
+
