@@ -25,7 +25,7 @@ body
 {
    position: relative;
    width: 250px;
-   background: linear-gradient(0deg,#b1b1b,#222,#b1b1b);
+   background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -50,7 +50,7 @@ body
   Left:-50%;
   width:100%;
   height:100%;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,.03);
   pointer-events: none;
   z-index: 1;
   
@@ -60,6 +60,9 @@ body
   position:relative;
   width: 150px;
   height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background:#222;
   z-index: 1000p;
 }
 .percent .number
