@@ -36,12 +36,41 @@ body
    transition: 0.5s;
   
 }
-svg
+.container .card:hover
+{
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  
+}
+.container .card:before
+{
+  contents='';
+  position:absolute;
+  top:0;
+  Left:-50%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.03);
+  pointer-events: none;
+  z-index: 1;
+  
+}
+.percent
 {
   position:relative
   width: 150px;
   height: 150px;
   z-index: 1000p;
+}
+svg
+{
+  position:relative
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background: #222;
+  z-index: 1000;
 }
 svg circle
 {
