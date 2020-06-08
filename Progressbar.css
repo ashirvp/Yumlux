@@ -148,7 +148,7 @@ svg-circle:nth-child(2)
   stroke-dasharray: 440;
   stroke-dashoffset: 440; 
 }
-.card .percent svg circle:nth-child(1) svg-circle:nth-child(2)
+.card :nth-child(1) svg-circle:nth-child(2)
 {
   stroke-dashoffset: calc(440-(440*90)/100); 
   stroke: #00ff43;
