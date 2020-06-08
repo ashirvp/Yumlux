@@ -21,6 +21,24 @@ svg circle
    stroke-width: 10;
    stroke-linecap=round;
    transform: translate(5px,5px);
+}
+svg-circle: nth-child(2)
+{
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220; 
+}
+.card:nth-child(1) svg-circle:nth-child(2)
+{
+  stroke: #00ff43;
+}
+.card:nth-child(2) svg-circle:nth-child(2)
+{
+  stroke: #00ff43;
+}
+   .card:nth-child(3) svg-circle:nth-child(2)
+{
+  stroke: #00ff43;
+}
    
    
   
