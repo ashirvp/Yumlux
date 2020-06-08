@@ -143,7 +143,7 @@ svg circle
    stroke-linecap: round;
    transform: translate(5px,5px);
 }
-svg-circle:nth-child(2)
+svg circle:nth-child(2)
 {
   stroke-dasharray: 440;
   stroke-dashoffset: 440; 
