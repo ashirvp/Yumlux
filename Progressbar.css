@@ -5,6 +5,22 @@
   padding: 0;
   font-family: '',sans-serif;
 }
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #101010;
+  
+}
+.container
+{
+  position:relative
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
 svg
 {
   position:relative
@@ -33,11 +49,11 @@ svg-circle: nth-child(2)
 }
 .card:nth-child(2) svg-circle:nth-child(2)
 {
-  stroke: #00ff43;
+  stroke: #00a1ff;
 }
    .card:nth-child(3) svg-circle:nth-child(2)
 {
-  stroke: #00ff43;
+  stroke: #ff04f7;
 }
    
    
