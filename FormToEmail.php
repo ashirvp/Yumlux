@@ -4,7 +4,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 
 
-$my_email = "you@email.com";
+$my_email = "yumlux.biz@gmail.com";
 
 /*
 
