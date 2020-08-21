@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -90,9 +91,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a class="popup-with-form" href="#test-form">Get a free Website</a>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="col-12">
@@ -286,36 +285,6 @@
 
 <!-- link that opens popup -->
 
-    <!-- form itself end-->
-    <form id="test-form" class="white-popup-block mfp-hide">
-        <div class="popup_box ">
-            <div class="popup_inner">
-                <div class="popup_header">
-                    <h3>This Option is Only for Startups</h3>
-                </div>
-                <div class="custom_form">
-                        <div class="row">
-                                <div class="col-xl-12">
-                                    <input type="text" placeholder="Your Name">
-                                </div>
-                                <div class="col-xl-12">
-                                    <input type="number" placeholder="mobile">
-                                </div>
-                                <div class="col-xl-12">
-                                    <input type="email" placeholder="Email">
-                                </div>
-                                <div class="col-xl-12">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12">
-                                    <button type="submit" class="boxed-btn3">Send</button>
-                                </div>
-                            </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <!-- form itself end -->
     
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -345,6 +314,27 @@
         <script src="js/mail-script.js"></script>
     
         <script src="js/main.js"></script>
+    
+    <script>
+            $("#contactForm").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbx4UKNjH540wqtfXHQFD1jwxuo1LT-xi53aZw1O0UncYzUhuDA/exec",
+                    data:$("#contactForm").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
+    
         <script>
             $('#datepicker').datepicker({
                 iconsLibrary: 'fontawesome',
