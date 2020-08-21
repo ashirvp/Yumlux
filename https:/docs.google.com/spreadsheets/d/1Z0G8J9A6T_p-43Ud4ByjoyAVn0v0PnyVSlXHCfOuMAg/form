@@ -8,7 +8,7 @@ https://docs.google.com/spreadsheets/d/1Z0G8J9A6T_p-43Ud4ByjoyAVn0v0PnyVSlXHCfOu
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Yumlux</title>
 </head>
 <body>
     <div class="container">
@@ -36,7 +36,7 @@ https://docs.google.com/spreadsheets/d/1Z0G8J9A6T_p-43Ud4ByjoyAVn0v0PnyVSlXHCfOu
             </form>
           </div>
           <div class="column">
-            <img src="crossroads.png" style="width:100%">
+            <img src="yumlux.png" style="width:100%">
           </div>
         </div>
       </div>
