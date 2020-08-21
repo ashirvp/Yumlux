@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -522,6 +524,26 @@ All rights reserved | <a href="index.html" target="_blank"> YumLux </a>
         </div>
     </form>
     <!-- form itself end -->
+    
+    <script>
+        $("#test-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby9IeF6bzQaNnoeqhWAuhBbKl9j1SXsKr3EKbpKmQa5P8arKfg/exec",
+                data:$("#test-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
